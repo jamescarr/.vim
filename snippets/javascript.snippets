@@ -72,3 +72,21 @@ snippet get
 # Get Element
 snippet gett
 	getElementBy${1:Id}('${2}')${3}
+
+## Jasmine Snippets
+#describe
+snippet describe
+	describe("${1:Context}", function(){
+		${2://your examples}
+	})
+
+#exemplar
+snippet it(
+	it("${1:should do something}", function(){
+		${2://code here}
+	})
+
+#matchers
+snippet expecteql
+	expect(${1:something}).toEqual(${2:exepected})
+
