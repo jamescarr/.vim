@@ -1,0 +1,10 @@
+var socket = io.listen(${1:server}); 
+socket.on('connection', function(client){ 
+  // new client is here! 
+  client.on('message', function(){
+    ${2://handle message}  
+  }) 
+  client.on('disconnect', function(){
+    ${3://handle disconnect}
+  }) 
+}); 
