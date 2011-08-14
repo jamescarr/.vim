@@ -1,0 +1,16 @@
+snippet task
+	task ${1:taskName} << {
+	  ${2:}
+	}
+
+snippet rep
+	repositories {
+	  ${1:mavenCentral()}
+	}
+snippet dep
+	dependencies {
+	  ${1:}
+	}
+snippet comp
+	compile "${1:org}:${2:name}:${3:version}"
+
